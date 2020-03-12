@@ -1,0 +1,30 @@
+.heading-text {
+    font-size: 200%;
+    margin: 0 10% 25px 10%;
+}
+
+.art_foto {
+    width: 100%;
+    border-radius: 5px;
+}
+
+figure {
+    margin: 0 3% 25px 3%;
+    color: #000;
+}
+
+.artikel-content {
+    margin: 0 10% 25px 10%;
+    color: #000;
+
+}
+
+details {
+    margin: 0 10% 25px 10%;
+}
+
+.summary-link {
+    text-decoration: none;
+    margin-left: 16px;
+    color: blue;
+}

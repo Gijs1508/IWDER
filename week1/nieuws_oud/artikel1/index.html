@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Art. 1</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../js/comment.js"></script>
+        <link rel="stylesheet" href="../css/comments.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../artikel1/index.html" class="active">Artikel 1</a></li>
+                <li><a href="../artikel2/index.html">Artikel 2</a></li>
+                <li><a href="../artikel3/index.html">Artikel 3</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main class="container">
+            <article>
+                <h1 class="heading-text">Cybercriminelen hadden toegang tot gegevens cliënten ggz-instelling</h1>
+                <figure>
+                    <img src="https://nos.nl/data/image/2020/02/07/627509/1024x576a.jpg" alt="artikel-foto" class="art_foto">
+                    <figcaption><em>mooie kabels</em></figcaption>
+                </figure>
+                <p class="artikel-content">Bij de Gelderse ggz-instelling Pro Persona hebben cybercriminelen toegang gehad tot patiëntgegevens. Even voor Kerst kregen medewerkers een phishingmail waar door vier van hen op werd geklikt, bevestigt een woordvoerder na berichtgeving van
+                RTL Nieuws.</p>
+                <p class="artikel-content">De criminelen konden op die manier kijken in de mailboxen van twee receptionistes, een logopedist en een activiteitenbegeleider. Daarin zaten persoonlijke gegevens van honderden cliënten, zoals personalia en diagnoses. Zij zijn per brief op
+                de hoogte gebracht.</p>
+                <p class="artikel-content">Volgens een woordvoerder kwam de mail 's avonds binnen. Pas de volgende ochtend detecteerde een firewall dat er verdacht dataverkeer was. "Daarop is de phishingmail direct verwijderd", zegt de woordvoerder. Ook moesten alle medewerkers van
+                het bedrijf een ander wachtwoord kiezen.</p>
+                <p class="artikel-content">De woordvoerder zegt dat er geen aanwijzingen zijn dat de informatie misbruikt is. Volgens hem laten de systemen verder niets verdachts zien, en heeft zich ook niemand met de gegevens gemeld bij een cliënt of bij Pro Persona. <br> Het lek is
+                gemeld bij de Autoriteit Persoonsgegevens.</p>
+
+
+                <section class="comment_input_section">
+                    <label for="comment">Voeg een comment toe </label> <br>
+                    <label class="comment_label" for="comment">Voer uw naam in: </label> <br>
+                    <input type="text" name="author" id="author" height="50" placeholder="Voer hier uw naam in" required> <br>
+                    <label class="comment_label" for="comment">Voer de comment in: </label> <br>
+                    <textarea id="comment" name="comment" rows="10" columns="70" required></textarea> <br>
+                    <input id="sent" type="submit" value="Stuur comment" class="btn btn-primary">
+                </section>
+
+                <section class="comment_output_section" id="comment_output"></section>
+
+                <details>
+                    <summary>Artikel over Cybercriminaliteit</summary>
+                    <a href="https://nos.nl/artikel/2321978-cybercriminelen-hadden-toegang-tot-gegevens-clienten-ggz-instelling.html" class="summary-link">link naar bron</a>
+                </details>
+            </article>
+        </main>
+    </body>
+</html>

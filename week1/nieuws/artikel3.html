@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Artikel</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/artikel.css">
+        <link rel="stylesheet" href="../css/comments.css">
+        <script src="../js/comment.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="shadow-5">
+            <a href="../index.html">Home</a>
+            <a href="../artikel1.html">Artikel 1</a>
+            <a href="../artikel2.html">Artikel 2</a>
+            <a href="../artikel3.html" class="active">Artikel 3</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <main class="container">
+            <article class="shadow-5">
+                <h1 class="heading-text">Cybercriminelen hadden toegang tot gegevens cliënten ggz-instelling</h1>
+                <figure>
+                    <img src="img/art3_foto.jpeg" alt="artikel-foto" class="art_foto">
+                    <figcaption><em>Foto: ANP</em></figcaption>
+                    </figure>
+                    <p class="artikel-content">In Oostenrijk wordt een arts beschuldigd van het misbruik van 109 kinderen. Volgens de aanklager in de stad Wels, vlak bij Linz, waren veertig slachtoffers jonger dan 14 jaar toen ze werden misbruikt.</p>
+                    <p class="artikel-content">Het misbruik begon mogelijk al in 2000 en gebeurde vooral in de praktijk van de 57-jarige uroloog. De man werd begin vorig jaar opgepakt nadat een van zijn slachtoffers aangifte had gedaan. Vervolgonderzoek bracht de overige zaken aan het licht.</p>
+                    <p class="artikel-content">Ook zou de arts anderen hebben aangezet tot het maken van pornovideo's van minderjarigen. Hijzelf zou een naaktfoto van een 8-jarige hebben gemaakt.</p>
+                    <p class="artikel-content">Verder zou hij een aantal kinderen cannabis hebben gegeven. Zeker drie van zijn slachtoffers zouden daardoor zwaar beschadigd zijn. De man hangt een gevangenisstraf van vijftien jaar boven het hoofd.</p>
+                    <p class="artikel-content">Volgens het Oostenrijkse Openbaar Ministerie staat vast dat de arts een zware psychische stoornis heeft en dat hij daarom een gevaar is voor de samenleving. De aanklager eist daarom niet alleen een celstraf, maar ook dat de man wordt behandeld.</p>
+                    <details>
+                        <summary>Artikel over een Oostenrijkse arts die kinderen misbruikt</summary>
+                        <a href="https://nos.nl/artikel/2321978-cybercriminelen-hadden-toegang-tot-gegevens-clienten-ggz-instelling.html" class="summary-link">link naar bron</a>
+                    </details>
+
+                    <section class="comment_input_section">
+                        <label for="comment">Voeg een comment toe </label> <br/>
+                        <label class="comment_label" for="comment">Voer uw naam in: </label> <br/>
+                        <input type="text" name="author" id="author" height="50" placeholder="Voer hier uw naam in" required> <br />
+                        <label class="comment_label" for="comment">Voer de comment in: </label> <br/>
+                        <textarea id="comment" name="comment" rows="10" columns="70" required></textarea> <br/>
+                        <input id="sent" type="submit" value="Stuur comment" class="btn btn-primary">
+                    </section>
+
+                    <section class="comment_output_section" id="comment_output"></section>
+
+            </article>
+        </main>
+    </body>
+</html>

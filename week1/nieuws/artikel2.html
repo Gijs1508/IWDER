@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Artikel</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/artikel.css">
+        <link rel="stylesheet" href="../css/table.css">
+        <link rel="stylesheet" href="../css/comments.css">
+        <script src="../js/comment.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="shadow-5">
+            <a href="../index.html">Home</a>
+            <a href="../artikel1.html">Artikel 1</a>
+            <a href="../artikel2.html" class="active">Artikel 2</a>
+            <a href="../artikel3.html">Artikel 3</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <main class="container">
+            <article class="shadow-5">
+                <h1 class="heading-text">Opnieuw ruim 200 vluchten geannuleerd van en naar Schiphol</h1>
+                <figure>
+                    <img src="img/art2_foto.jpeg" alt="artikel-foto" class="art_foto">
+                    <figcaption><em>Foto: Reuters</em></figcaption>
+                </figure>
+                <p class="artikel-content">Schiphol heeft nog altijd last van de harde wind. Tot nu toe zijn vandaag meer dan 220 vluchten van en naar de luchthaven geannuleerd. Dat is ongeveer een zesde van het totaal. Gisteren gingen ook al 240 vluchten niet door.</p>
+                <p class="artikel-content">"Er staat nog steeds een flinke wind en dat betekent dat onze baancapaciteit omlaag gaat", legt een woordvoerder uit. "Er zijn minder start- en landingsbanen in gebruik dan normaal."</p>
+                <p class="artikel-content">Uiteindelijk bepalen de luchtvaartmaatschappijen zelf welke vluchten ze schrappen. Vaak kiezen ze voor Europese vluchten. "Veel mensen zitten nog thuis op het moment dat ze horen dat hun vlucht niet doorgaat", vertelt de Schiphol-woordvoerder. "Daardoor is het ook niet zo druk in onze terminal."</p>
+                <p class="artikel-content">KLM heeft vandaag tot nu toe 75 retourvluchten geannuleerd, allemaal binnen Europa. De intercontinentale vluchten gaan gewoon door, zegt een woordvoerder. "Europese retourvluchten hebben de minste impact op ons netwerk. En ze zijn makkelijker om te boeken, omdat ze in het algemeen vaker gaan."</p>
+
+                <section class="table_section">
+                    <table id="vluchten">
+                        <tr>
+                            <th>Vluchtnummer</th>
+                            <th>Afkomst</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>KL 1972</td>
+                            <td>Boedapest</td>
+                            <td>Bagage afgehandeld</td>
+                        </tr>
+                        <tr>
+                            <td>BE 101</td>
+                            <td>Birmingham</td>
+                            <td>Geannuleerd</td>
+                        </tr>
+                        <tr>
+                            <td>BA 428</td>
+                            <td>London Heathrow</td>
+                            <td>Geannuleerd</td>
+                        </tr>
+                        <tr>
+                            <td>KL 1854</td>
+                            <td>Dusseldorf</td>
+                            <td>Bagage afgehandeld</td>
+                        </tr>
+                        <tr>
+                            <td>KL 702</td>
+                            <td>Santiago</td>
+                            <td>Bagage afgehandeld</td>
+                        </tr>
+                        <tr>
+                            <td>UX 1091</td>
+                            <td>Madrid</td>
+                            <td>Geannuleerd</td>
+                        </tr>
+                    </table>
+                    <figcaption><i>Overzicht van komende vluchten</i></figcaption>
+                </section>
+
+                <details>
+                    <summary>Artikel over Geannuleerde vluchten</summary>
+                    <a href="https://nos.nl/artikel/2321978-cybercriminelen-hadden-toegang-tot-gegevens-clienten-ggz-instelling.html" class="summary-link">link naar bron</a>
+                </details>
+
+                <section class="comment_input_section">
+                    <label for="comment">Voeg een comment toe </label> <br/>
+                    <label class="comment_label" for="comment">Voer uw naam in: </label> <br/>
+                    <input type="text" name="author" id="author" height="50" placeholder="Voer hier uw naam in" required> <br />
+                    <label class="comment_label" for="comment">Voer de comment in: </label> <br/>
+                    <textarea id="comment" name="comment" rows="10" columns="70" required></textarea> <br/>
+                    <input id="sent" type="submit" value="Stuur comment" class="btn btn-primary">
+                </section>
+
+                <section class="comment_output_section" id="comment_output"></section>
+            </article>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+.btn-comm {
+    margin-top: 1%;
+    width: 30vw;
+}
+
+label {
+    font-size: 150%;
+    margin-top: 15px;
+}
+
+textarea {
+    margin-top: 2%;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    width: 30vw;
+    padding: 5px 0px;
+}
+
+input {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#author, #name, #email {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    width: 30vw;
+    min-height: 25px;
+    height: 25px;
+    padding: 5px 0px;
+}
+
+.comment_label {
+    margin: 20px 5px 20px 5px;
+    font-size: 120%;
+}
+
+.comment {
+    width: 40%;
+    height: 20%;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+}
+
+.comment_auth {
+    color: #b2b2b2;
+}
+
+.comment_comm {
+    color: #b2b2b2;
+}
+
+.comment_input_section {
+    margin-top: 50px;
+}
+
+p {
+    word-break: break-word;
+}
+
+.btn {
+    width: 30vw;
+}
+
+
+@media only screen and (max-width: 400px){
+    textarea, input, #author, #name, #email {
+        width: 90%;
+    }
+
+    .btn {
+        width: 93.5% !important;
+        padding: 5px;
+    }
+
+
+
+}

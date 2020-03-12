@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contact</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/comments.css">
+        <link rel="stylesheet" href="../css/animations.css">
+        <script src="../js/comment.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="shadow-5">
+            <a href="../index.html">Home</a>
+            <a href="../artikel1.html">Artikel 1</a>
+            <a href="../artikel2.html">Artikel 2</a>
+            <a href="../artikel3.html">Artikel 3</a>
+            <a href="../contact.html" class="active">Contact</a>
+        </nav>
+        <main class="container">
+            <article class="shadow-5">
+                <h1 class="heading-text animated bounce">Neem contact op</h1>
+                <section class="contact_input_section">
+                    <label class="comment_label" for="contact">Voer uw naam in: </label> <br/>
+                    <input type="text" name="author" id="name" placeholder="Voer hier uw naam in" required> <br />
+                    <label class="comment_label" for="contact">Voer uw email in: </label> <br/>
+                    <input type="text" name="author" id="email" placeholder="Voer hier uw email in" required> <br />
+                    <label class="comment_label" for="contact">Voer uw vraag of suggestie in: </label> <br/>
+                    <textarea id="comment" name="comment" rows="10" columns="70" required></textarea> <br/>
+                    <input id="contact_sent" type="submit" value="Verstuur uw contactaanvraag" class="btn btn-primary">
+                </section>
+
+                <section class="comment_output_section" id="contact_output"></section>
+            </article>
+        </main>
+    </body>
+</html>

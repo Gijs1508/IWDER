@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background: #fff;
+}
+
+h1 {
+    font-size: 200%;
+    font-weight: 400;
+}
+
+p {
+    line-height: 1.55;
+}
+
+figcaption {
+    color: #777;
+    margin-bottom: 5%;
+}
+
+summary {
+    margin-top: 3%;
+}
+
+.art_foto {
+    border-radius: 5px;
+    height: 30vh;
+    width: 30vw;
+}
+
+.container {
+    min-height: 80vh;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 5%;
+    background-color: #daedf0;
+    display: inline-block;
+    margin-left: 16vw;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.heading-text {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    max-width: 60%;
+    word-break: break-word;
+}
+
+.artikel-content {
+  max-width: 60%;
+  word-break: break-word;
+}
+
+.summary-link{
+    color: #000 !important;
+    background: #daedf0 !important;
+}
+
+nav {
+  overflow: hidden;
+    background: #6c63a2;
+    margin-bottom: 3%;
+    position: fixed;
+    height: 100vh;
+    width: 15vw;
+}
+
+nav li {
+  float: left;
+}
+
+nav .icon {
+  display: none;
+}
+
+nav ul {
+    list-style: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+    color: #fff;
+    font-size: 110%;
+    width: 15vw;
+    display: inline;
+    text-align: center;
+}
+
+a:hover {
+    background: #363151;
+}
+a, a:visited {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    padding: 20px 5px;
+}
+
+.active{
+    background: #a39ec5;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+@media only screen and (max-width: 1920px){
+    .container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .container {
+        width: 80%;
+        margin: 0;
+        padding: 0;
+        margin-left: 30px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    body {
+        background: #daedf0;
+    }
+
+    nav {
+      height: auto;
+    }
+
+    nav ul li{
+      width: 100%;
+    }
+
+
+    .art_foto {
+        width: 100%;
+    }
+}

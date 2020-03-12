@@ -1,0 +1,42 @@
+table {
+    display: block;
+    overflow: auto;
+}
+
+#vluchten {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#vluchten td, #vluchten th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#vluchten tr:nth-child(even){background-color: #f2f2f2;}
+
+#vluchten tr:hover {background-color: #ddd;}
+
+#vluchten th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #564f81;
+  color: white;
+}
+
+.table_section {
+    margin-top: 30px;
+    margin: 0 10% 25px 10%;
+}
+
+.table_section figcaption {
+    margin-bottom: 30px;
+}
+
+ @media only screen and (max-width: 400px){
+    display: block;
+    white-space: nowrap;
+    overflow-x: auto;
+ }

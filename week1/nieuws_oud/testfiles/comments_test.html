@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/comment.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/comments.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="container">
+            <article>
+                <section class="comment_input_section">
+                    <label class="comment_label" for="comment">Voer uw naam in: </label> <br/>
+                    <input type="text" name="author" id="author" height="50" placeholder="Voer hier uw naam in" required> <br />
+                    <label for="comment">Voer de comment in: </label> <br/>
+                    <textarea id="comment" name="comment" rows="10" columns="70" required></textarea> <br/>
+                    <input id="sent" type="submit" value="Send" class="btn btn-primary">
+                </section>
+
+                <section class="comment_output_section" id="comment_output"></section>
+            </article>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contact</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../js/comment.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/comments.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../artikel1/index.html">Artikel 1</a></li>
+                <li><a href="../artikel2/index.html">Artikel 2</a></li>
+                <li><a href="../artikel3/index.html">Artikel 3</a></li>
+                <li><a href="../contact/index.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <main class="container">
+            <article>
+                <section class="contact_input_section">
+                    <label for="contact">Neem contact op </label> <br/>
+                    <label class="comment_label" for="contact">Voer uw naam in: </label> <br/>
+                    <input type="text" name="author" id="name" placeholder="Voer hier uw naam in" required> <br />
+                    <label class="comment_label" for="contact">Voer uw email in: </label> <br/>
+                    <input type="text" name="author" id="email" placeholder="Voer hier uw email in" required> <br />
+                    <label class="comment_label" for="contact">Voer uw vraag of suggestie in: </label> <br/>
+                    <textarea id="comment" name="comment" rows="10" columns="70" required></textarea> <br/>
+                    <input id="contact_sent" type="submit" value="Verstuur uw contactaanvraag" class="btn btn-primary">
+                </section>
+
+                <section class="comment_output_section" id="contact_output"></section>
+            </article>
+        </main>
+    </body>
+</html>
