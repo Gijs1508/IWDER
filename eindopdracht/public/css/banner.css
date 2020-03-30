@@ -1,0 +1,44 @@
+.content {
+    background: #080609 !important;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 25vh;
+}
+
+.banner .banner_img {
+    width: 100%;
+    height: auto;
+    -webkit-filter: blur(2px);
+}
+
+.banner .banner_img {
+    width: 100%;
+    height: 25vh;
+    position: fixed;
+}
+
+.banner .banner_content {
+    width: 100%;
+    height: 25vh;
+    margin-top: -25px;
+    background: rgba(16,8,6,.4);
+}
+
+.banner .banner_text {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    color: #ffffff;
+    font-size: 250%;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    .banner .banner_img {
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    }
+}

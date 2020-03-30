@@ -1,0 +1,170 @@
+.content {
+    background: #000 !important;
+    color: #fff;
+}
+
+.section {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: none;
+}
+
+.section .section_heading {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+p{
+    margin: 25px 5% 25px 5%;
+}
+
+.section_text1 {
+    width: 50%;
+    height: 75vh;
+    background-color: #000;
+    float: right;
+    overflow: auto !important;
+}
+.section_pic1 {
+    width: 50%;
+    height: 75vh;
+    float: left;
+    background-image: url("../media/img/about1.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.section_text2 {
+    width: 50%;
+    height: 75vh;
+    background-color: #080609;
+    float: left;
+    overflow: auto !important;
+}
+.section_pic2 {
+    width: 50%;
+    height: 75vh;
+    float: right;
+    background-image: url("../media/img/about2.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.section_text3 {
+    width: 50%;
+    height: 75vh;
+    background-color: #080609;
+    float: right;
+    overflow: auto !important;
+}
+.section_pic3 {
+    width: 50%;
+    height: 75vh;
+    float: left;
+    background-image: url("../media/img/about3.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.slider_buttons {
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    border-radius: 100%;
+    position: absolute;
+    margin: 15px;
+    top: 25vh;
+    cursor: grab;
+}
+.next {
+    right: 0;
+    background: url(../media/svg/next.svg);
+    background-size: cover;
+}
+
+.previous {
+    left: 0;
+    background: url(../media/svg/previous.svg);
+    background-size: cover;
+}
+
+.line {
+    width: 50%;
+    height: 0;
+    border: 1px solid #fff;
+    margin: 3px;
+    display: inline-block;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.section_text3 .line {
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+}
+
+.tour_element {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 140px;
+    position: relative;
+    text-align: center;
+}
+
+.tour_element .context h1 {
+    margin-bottom: 25px;
+}
+
+.tour_element .tickets_button {
+    width: 150px;
+    border-top: 1px solid #fff;
+    text-align: center;
+    cursor: grab;
+    display: block;
+    margin: auto;
+}
+
+.tour_element .tickets_button p {
+    margin: 5px 5px 5px 5px;
+}
+
+.tour_element .context p {
+    margin: 5px 0 0;
+}
+
+article a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .section_item {
+        margin-top: 0 !important;
+        width: 100% !important;
+    }
+
+    .section {
+        overflow: auto !important;
+
+    }
+
+    .section_text1, .section_text2, .section_text3 {
+        float: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .section_pic1, .section_pic2, .section_pic3 {
+        float: none;
+        width: 100%;
+        height: 100vh;
+    }
+    .section .section_text3 .section_heading {
+        margin-bottom: 25px;
+    }
+}
