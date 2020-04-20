@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/menu.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <title>Menukaart</title>
     </head>
     <body>
@@ -12,63 +12,63 @@
             <img src="img/logo.png" alt="logo" class="logo-img">
         </main>
         <section class="wrapper">
-            <div id="myBtn" class="item pulse-grow">
+            <div onclick="OpenSpan('img/turkse_pizza.png', 'Turkse Pizza', '€7.99')" class="item shadow">
                 <img src="img/turkse_pizza.png" alt="foto" class="item-img">
                 <div class="item-text">
                     <span>Turkse Pizza</span> <br>
                     <span>Prijs: €7.99</span>
                 </div>
             </div>
-            <div id="myBtn" class="item pulse-grow">
+            <div onclick="OpenSpan('img/broodje_shoarma.png', 'Broodje Shoarma', '€5.99')" class="item shadow">
                 <img src="img/broodje_shoarma.png" alt="foto" class="item-img">
                 <div class="item-text">
                     <span>Broodje Shoarma</span> <br>
                     <span>Prijs: €5.99</span>
                 </div>
             </div>
-            <div id="myBtn" class="item pulse-grow">
+            <div onclick="OpenSpan('img/broodje_doner.png', 'Broodje Döner', '€6.99')" class="item shadow">
                 <img src="img/broodje_doner.png" alt="foto" class="item-img">
                 <div class="item-text">
-                    <span>Broodje Doner</span> <br>
+                    <span>Broodje Döner</span> <br>
                     <span>Prijs: €6.99</span>
                 </div>
             </div>
-            <div id="myBtn" class="item pulse-grow">
+            <div onclick="OpenSpan('img/kapsalon.png', 'Kapsalon', '€10.99')" class="item shadow">
                 <img src="img/kapsalon.png" alt="foto" class="item-img">
                 <div class="item-text">
                     <span>Kapsalon</span> <br>
                     <span>Prijs: €10.99</span>
                 </div>
             </div>
-            <div id="myBtn" class="item pulse-grow">
+            <div onclick="OpenSpan('img/schotel_kebab.png', 'Schotel Kebab', '€12.99')" class="item shadow">
                 <img src="img/schotel_kebab.png" alt="foto" class="item-img">
                 <div class="item-text">
                     <span>Schotel Kebab</span> <br>
                     <span>Prijs: €12.99</span>
                 </div>
             </div>
-            <div id="myBtn" class="item pulse-grow">
+            <div onclick="OpenSpan('img/pizza_shoarma.png', 'Pizza Shoarma', '€7.99')" class="item shadow">
                 <img src="img/pizza_shoarma.png" alt="foto" class="item-img">
                 <div class="item-text">
                     <span>Pizza Shoarma</span> <br>
                     <span>Prijs: €7.99</span>
                 </div>
             </div>
-            <div id="myBtn" class="item pulse-grow">
+            <div onclick="OpenSpan('img/halve_kip.png', 'Halve Kip', '€9.99')" class="item shadow">
                 <img src="img/halve_kip.png" alt="foto" class="item-img">
                 <div class="item-text">
                     <span>Halve Kip</span> <br>
                     <span>Prijs: €9.99</span>
                 </div>
             </div>
-            <div id="myBtn" class="item pulse-grow">
+            <div onclick="OpenSpan('img/spare_ribs.png', 'Spare Ribs', '€10.99')" class="item shadow">
                 <img src="img/spare_ribs.png" alt="foto" class="item-img">
                 <div class="item-text">
                     <span>Spare Ribs</span> <br>
                     <span>Prijs: €10.99</span>
                 </div>
             </div>
-            <div id="myBtn" class="item pulse-grow">
+            <div onclick="OpenSpan('img/patat.png', 'Patat', '€3.99')" class="item shadow">
                 <img src="img/patat.png" alt="foto" class="item-img">
                 <div class="item-text">
                     <span>Patat</span> <br>
@@ -77,21 +77,17 @@
             </div>
         </section>
 
-
-
-        <!-- Trigger/Open The Modal -->
-        <button id="myBtn" class="btn btn-primary btn-lg centered">Open Modal</button>
-
         <!-- The Modal -->
-        <div id="myModal" class="modal">
-
+        <div id="myModal" class="modal animated fadeInDown">
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
+              <div class="modal-foto"> <img src="" rel="foto" id="modalPic"> </div>
+              <div class="modal-tekst"> <p id="modalNaam"></p> <p id="modalPrijs"></p></div>
+              <button class="modal-bestel btn btn-primary"> Bestel </button>
           </div>
-
         </div>
+
         <script type="text/javascript" src="js/modal.js"> </script>
     </body>
 </html>

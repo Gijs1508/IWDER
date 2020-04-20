@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" type="image/x-icon" href="media/img/logo.png" />
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/banner.css">
+        <link rel="stylesheet" href="css/shop.css">
+        <link rel="stylesheet" href="css/animations.css">
+        <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+        <title> Webshop</title>
+    </head>
+    <body>
+      <!-- REVIEW: Deze div omvat ook weer alle elementen in de body. Waarom dan het gebruik van deze div? -->
+        <div class="page">
+            <header>
+                <span class="menu_toggle">
+                    <i class="menu_open icon icon-menu"></i>
+                    <i class="menu_close icon icon-menu-close"></i>
+                </span>
+                <nav class="menu_items">
+                    <ul class="menu_item" data-link="index.html"><p>Home</p></ul>
+                    <ul class="menu_item" data-link="about.html"><p>About</p></ul>
+                    <ul class="menu_item" data-link="shop.html"><p>Webshop</p></ul>
+                    <ul class="menu_item" data-link="contact.html"><p>Contact</p></ul>
+                </nav>
+            </header>
+            <main class="content">
+                <section class="banner">
+                    <img src="media/img/banner2.jpg" alt="" class="banner_img">
+                    <div class="banner_content"><p class="banner_text">WEBSHOP</p></div>
+                </section>
+                <section class="content_items">
+                    <section class="grid_wrapper">
+                        <article class="product">
+                            <section class="product_img">
+                                <img src="media/shop/item1.jpg" alt="vinyl">
+                            </section>
+                            <section class="product_content">
+                                <h1>STAY WITH ME</h1>
+                                <p class="product_price">€13.42</p>
+                                <p>Amelie Lens STAY WITH ME Record</p>
+                                <button
+                                        class="product_button"
+                                        id="product1"
+                                        data-name="STAY WITH ME"
+                                        data-desc="Amelie Lens STAY WITH ME RECORD"
+                                        data-price="€13.42"
+                                        data-img="item1.jpg"
+                                        data-iframelink="https://open.spotify.com/embed/album/0vlWyzbAl3ff9b3zout1XQ">
+                                    ORDER
+                                </button>
+                            </section>
+                        </article>
+                        <article class="product">
+                            <section class="product_img">
+                                <img src="media/shop/item2.jpg" alt="vinyl">
+                            </section>
+                            <section class="product_content">
+                                <h1>HYPNOTIZED</h1>
+                                <p class="product_price">€13.42</p>
+                                <p>Amelie Lens HYPNOTIZED Record</p>
+                                <button
+                                        class="product_button"
+                                        id="product2"
+                                        data-name="HYPNOTIZED"
+                                        data-desc="Amelie Lens HYPNOTIZED WITH ME RECORD"
+                                        data-price="€13.42"
+                                        data-img="item2.jpg"
+                                        data-iframelink="https://open.spotify.com/embed/album/4TS1aM1f5TSkm3I6natijd">
+                                    ORDER
+                                </button>
+                            </section>
+                        </article>
+                        <article class="product">
+                            <section class="product_img">
+                                <img src="media/shop/item3.jpg" alt="vinyl">
+                            </section>
+                            <section class="product_content">
+                                <h1>FABRIC PRESENTS</h1>
+                                <p class="product_price">€27.30</p>
+                                <p> FABRIC PRESENTS AMELIE LENS Record</p>
+                                <button
+                                        class="product_button"
+                                        id="product3"
+                                        data-name="FABRIC PRESENTS"
+                                        data-desc="FABRIC PRESENTS AMELIE LENS Record"
+                                        data-price="€27.30"
+                                        data-img="item3.jpg"
+                                        data-iframelink="https://open.spotify.com/embed/album/0yMSQYFzoMZjmYiiRBkqTq">
+                                    ORDER
+                                </button>
+                            </section>
+                        </article>
+                        <article class="product">
+                            <section class="product_img">
+                                <img src="media/shop/item4.jpg" alt="shirt">
+                            </section>
+                            <section class="product_content">
+                                <h1>LENSKE</h1>
+                                <p class="product_price">€12.99</p>
+                                <p>LENSKE T-Shirt</p>
+                                <button
+                                        class="product_button"
+                                        id="product4"
+                                        data-name="LENSKE"
+                                        data-desc="LENSKE T-Shirt"
+                                        data-price="€12.99"
+                                        data-img="item4.jpg"
+                                        data-iframelink="">
+                                    ORDER
+                                </button>
+                            </section>
+                        </article>
+                        <article class="product">
+                            <section class="product_img">
+                                <img src="media/shop/item5.jpg" alt="shirt">
+                            </section>
+                            <section class="product_content">
+                                <h1>SHUT UP</h1>
+                                <p class="product_price">€24.99</p>
+                                <p>SHUT UP AMELIE IS PLAYING T-Shirt</p>
+                                <button
+                                        class="product_button"
+                                        id="product5"
+                                        data-name="SHUT UP"
+                                        data-desc="SHUT UP AMELIE IS PLAYING T-Shirt"
+                                        data-price="€24.99"
+                                        data-img="item5.jpg"
+                                        data-iframelink="">
+                                    ORDER
+                                </button>
+                            </section>
+                        </article>
+                        <article class="product">
+                            <section class="product_img">
+                                <img src="media/shop/item6.jpg" alt="shirt">
+                            </section>
+                            <section class="product_content">
+                                <h1>SHUT UP</h1>
+                                <p class="product_price">€42.99</p>
+                                <p>SHUT UP AMELIE IS PLAYING Hoodie</p>
+                                <button
+                                        class="product_button"
+                                        id="product6"
+                                        data-name="SHUT UP"
+                                        data-desc="SHUT UP AMELIE IS PLAYING Hoodie"
+                                        data-price="€42.99"
+                                        data-img="item6.jpg"
+                                        data-iframelink="">
+                                    ORDER
+                                </button>
+                            </section>
+                        </article>
+                    </section>
+
+                    <section class="product_modal">
+                        <section class="modal_heading_container">
+                            <h1 class="modal_heading"></h1>
+                        </section>
+                        <section class="modal_img_container">
+                            <img class="modal_img" src="media/img/no-image.jpg" alt="productimg">
+                        </section>
+                        <section class="modal_content_container">
+                            <div class="close_button"><div class="icon icon-close-white"></div></div>
+                            <p class="modal_content"></p>
+                            <p class="modal_price"></p>
+                            <section class="modal_order_form">
+                                <form class="modal_form">
+                                    <p>Name:</p>
+                                    <input type="text" class="form_item" name="name" placeholder="Amelie Lens" required>
+                                    <p>Email:</p>
+                                    <input type="email" class="form_item" name="email" placeholder="amelie@lens.com" required>
+                                    <p>Phone number:</p>
+                                    <input type="text" class="form_item" name="phone" placeholder="061234567890" required>
+                                    <input type="submit" class="order_button" value="Order">
+                                </form>
+                            </section>
+                            <iframe src="404.html" class="spotify_playlist" allow="encrypted-media"></iframe>
+                        </section>
+                    </section>
+
+                    <section class="success_message">
+                        <div class="success_heading"><h1>Success!</h1></div>
+                        <div class="success_close"><div class="icon icon-close-white"></div></div>
+                        <div class="success_content"><p class="success_content_text"></p></div>
+                    </section>
+                </section>
+            </main>
+            <footer>
+                <div class="icons">
+                    <a href="http://soundcloud.com/amelielens" target="_blank"><div class="footer-icon soundcloud"></div></a>
+                    <a href="http://instagram.com/amelie_lens" target="_blank"><div class="footer-icon instagram"></div></a>
+                    <a href="http://www.facebook.com/amelielensmusic" target="_blank"><div class="footer-icon facebook"></div></a>
+                    <a href="https://twitter.com/AmelieLENS" target="_blank"><div class="footer-icon twitter"></div></a>
+                    <a href="https://en.wikipedia.org/wiki/Amelie_Lens" target="_blank"><div class="footer-icon wikipedia"></div></a>
+                </div>
+            </footer>
+        </div>
+        <script src="js/main.js"></script>
+        <script src="js/shop.js"></script>
+    </body>
+</html>

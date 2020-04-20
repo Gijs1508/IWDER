@@ -1,0 +1,143 @@
+article {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    color: #fff;
+}
+
+article .article_text {
+    width: 50%;
+    height: 75vh;
+    background-color: #000;
+    float: right;
+    overflow: auto !important;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+article .article_pic {
+    width: 50%;
+    height: 75vh;
+    float: left;
+    background-image: url("../media/img/contact.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+article .article_heading {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 150%;
+    width: 100%;
+}
+
+article .article_heading h1 {
+    border-bottom: 1px solid #fff;
+    width: 100%;
+}
+
+article .article_content {
+    width: 100%;
+}
+
+article h6 {
+    font-size: 120%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.contact_form {
+    margin-top: 50px;
+}
+
+.contact_form .form_item {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+    margin-bottom: 10px;
+    outline: #b2b2b2;
+}
+
+
+.contact_form .contact_button {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    font-size: 150%;
+    margin-top: 25px;
+    outline: none;
+}
+
+.success_message {
+    width: 280px;
+    height: auto;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    z-index: 999999;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    border-radius: 4px;
+    display: none;
+    border: 1px solid #fff;
+    padding: 15px;
+}
+
+.success_message .section_heading {
+    font-size: 150%;
+    margin-bottom: 10px;
+}
+
+.success_message .success_close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px;
+}
+
+.success_message .success_close:hover {
+    cursor: pointer;
+}
+
+.contact_form .contact_button:hover {
+    border-top: 1px solid #b2b2b2;
+    border-bottom: 1px solid #b2b2b2;
+    color: #b2b2b2;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    article .article_text {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    article {
+        margin-top: 0 !important;
+        width: 100% !important;
+    }
+
+    article .article_text {
+        width: 100%;
+        height: 75vh;
+    }
+
+    article .article_pic {
+        display: none;
+    }
+}

@@ -4,13 +4,17 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    background-image: url("../img/background-pic.png");
+html {
+    background: url("../img/background-pic.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-color: #111111;
 }
 
 main {
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     border: 1px solid black;
     padding: 5px;
     text-align: center;
@@ -20,8 +24,8 @@ main {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .wrapper .item {
@@ -32,38 +36,8 @@ main {
     cursor: pointer;
 }
 
-/* Pulse Grow */
-@-webkit-keyframes pulse-grow {
-  to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-}
-@keyframes pulse-grow {
-  to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-}
-.pulse-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.pulse-grow:hover, .pulse-grow:focus, .pulse-grow:active {
-  -webkit-animation-name: pulse-grow;
-  animation-name: pulse-grow;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 6;
-  animation-iteration-count: 6;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-  z-index: 100;
+.shadow:hover {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.8);
 }
 
 .item-text {
@@ -86,7 +60,10 @@ main {
     height: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+
+
+
+@media screen and (max-width: 600px) {
     .wrapper {
         display: block;
     }
@@ -97,9 +74,8 @@ main {
     .item-text {
         font-size: 200%;
     }
-}
 
-@media only screen and (max-width: 400px) {
     .logo-img {
         width: 100%;
     }
+}

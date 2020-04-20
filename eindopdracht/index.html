@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" type="image/x-icon" href="media/img/logo.png" />
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/animations.css">
+        <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+        <title>AMELIE LENS</title>
+    </head>
+    <body>
+      <!-- REVIEW: Deze div omvat ook alle elementen in de body. Waarom dan het gebruik van deze div? -->
+        <div class="page">
+            <header>
+                <span class="menu_toggle">
+                <i class="menu_open icon icon-menu"></i>
+                <i class="menu_close icon icon-menu-close"></i>
+                </span>
+                <nav class="menu_items">
+                  <!-- REVIEW: Deze divs hadden netter geweest als ul. Dit is ook in de college's zo uitgelegd. -->
+                    <!--gedaan-->
+                    <ul class="menu_item" data-link="index.html"><p>Home</p></ul>
+                    <ul class="menu_item" data-link="about.html"><p>About</p></ul>
+                    <ul class="menu_item" data-link="shop.html"><p>Webshop</p></ul>
+                    <ul class="menu_item" data-link="contact.html"><p>Contact</p></ul>
+                </nav>
+            </header>
+            <main class="content">
+                <video loop id="backgroundVideo">
+                    <source src="media/videos/follow.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <audio id="audio" loop>
+                    <source src="media/music/follow.mp3">
+                </audio>
+                <article class="content_block">
+                    <section class="img_overlay">
+                        <section class="content_inner">
+                            <h1 class="headline_text"> AMELIE LENS </h1>
+                            <p class="headline_context"> DJ/ PRODUCER </p>
+                            <div class="audio_button"><p class="audio_button_text">SPEEL PREVIEW</p></div>
+                        </section>
+                    </section>
+                </article>
+            </main>
+            <footer>
+              <!-- REVIEW: Deze div had je netjes als lijst kunnen vormgeven. Ook op de andere pagina's -->
+                <!-- gedaan!-->
+                <list class="icons">
+                    <a href="http://soundcloud.com/amelielens" target="_blank"><div class="footer-icon soundcloud"></div></a>
+                    <a href="http://instagram.com/amelie_lens" target="_blank"><div class="footer-icon instagram"></div></a>
+                    <a href="http://www.facebook.com/amelielensmusic" target="_blank"><div class="footer-icon facebook"></div></a>
+                    <a href="https://twitter.com/AmelieLENS" target="_blank"><div class="footer-icon twitter"></div></a>
+                    <a href="https://en.wikipedia.org/wiki/Amelie_Lens" target="_blank"><div class="footer-icon wikipedia"></div></a>
+                </list>
+            </footer>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
